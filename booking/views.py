@@ -36,7 +36,7 @@ def booking(request):
 def bookingSubmit(request):
     user = request.user
     times = [
-        "9 PM", "10 PM", "11 PM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM", "7 PM",
+        "9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM", "6:00 PM", "7:00 PM","8:00 PM", "9:00 PM"
     ]
     today = datetime.now()
     minDate = today.strftime('%Y-%m-%d')
@@ -128,7 +128,7 @@ def userUpdate(request, id):
 def userUpdateSubmit(request, id):
     user = request.user
     times = [
-        "9 PM", "10 PM", "11 PM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM", "7 PM",
+        "9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM", "6:00 PM", "7:00 PM", "8:00 PM", "9:00 PM"
     ]
     today = datetime.now()
     minDate = today.strftime('%Y-%m-%d')
